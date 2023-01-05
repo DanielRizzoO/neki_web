@@ -1,7 +1,14 @@
 import React from "react";
 import * as Styled from './styles';
+import Registro from "../Registro";
+
 
 function Home() {
+
+    const GoCreateAccount = () => {
+        return <Registro />
+    }
+
   return (
     <>
     <Styled.Container>
@@ -34,7 +41,7 @@ function Home() {
                   <div className="overlay-panel overlay-left">
                     <h1>Olá, amigo!</h1>
                     <p>Preencha o cadastro e comece sua jornada conosco!</p>
-                    <button class="ghost" id="signUp">Cadastre-se</button>
+                    <button class="ghost" id="signUp" onClick={<Registro />}>Cadastre-se</button>
                   </div>
                   </Styled.OverlayLeft>
                   </Styled.OverlayPanel>
